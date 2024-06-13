@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FloatingText from "./assets/FloatingText";
+import FloatingText from "./FloatingText";
 import { useNavigate } from "react-router-dom";
 
 export default function Home() {
