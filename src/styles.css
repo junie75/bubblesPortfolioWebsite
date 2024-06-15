@@ -100,7 +100,7 @@ body {
 
 .floatingText {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -115,7 +115,8 @@ body {
 
 .floatingSpan {
   /* display: inline-block; */
-  font-size: 180px;
+  /* font-size: 150px; */
+  font-size: calc(10vw - 10px);
   font-family: "RubberDuck", sans-serif;
   color: #ffffff00;
   /* letter outline */
@@ -181,7 +182,7 @@ body {
   }
 }
 
-@media (max-width: 1400px) {
+/* @media (max-width: 1400px) {
   .nav a {
     font-size: 20px;
   }
@@ -193,7 +194,7 @@ body {
   .floatingSpan {
     font-size: 110px;
   }
-}
+} */
 
 /* Media Queries for Responsive Design */
 @media (max-width: 1400px) {
@@ -209,13 +210,13 @@ body {
   .subHdr {
     font-size: 60px;
   }
-
+  /* 
   .floatingSpan {
-    font-size: 180px;
-  }
+    font-size: 100px;
+  } */
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .nav {
     width: 60%;
     padding: 15px 20px;
@@ -226,14 +227,25 @@ body {
     font-size: 18px;
   }
 
+  .welcome {
+    height: 50%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   .subHdr {
-    font-size: 40px;
+    font-size: 30px;
   }
 
+  .floatingText {
+    flex-direction: column;
+  }
+  /* .floatingSpan {
+    font-size: 80px;
+  } */
   .floatingSpan {
-    font-size: 110px;
+    font-size: calc(15vw - 10px);
   }
-
   .button {
     font-size: 18px;
     padding: 8px 16px;
@@ -248,22 +260,11 @@ body {
   }
 
   .nav a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .subHdr {
-    font-size: 30px;
-  }
-
-  .floatingText {
-    flex-direction: column;
-  }
-
-  .floatingSpan {
-    /* display: inline-block; */
-    /* white-space: normal; Allow the text to wrap */
-    /* text-align: center; Center the text */
-    font-size: 80px;
+    font-size: 25px;
   }
 
   .button {
@@ -289,6 +290,7 @@ body {
   .welcome {
     align-items: center;
     margin: 0 20px;
+    height: 40%;
   }
 
   .subHdr {
@@ -298,8 +300,8 @@ body {
   }
 
   .floatingSpan {
-    font-size: 70px;
-    text-align: center;
+    font-size: calc(20vw - 10px);
+    /* text-align: center; */
   }
 
   .button {

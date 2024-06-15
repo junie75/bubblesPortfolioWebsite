@@ -22,7 +22,7 @@ const FloatingText = ({
           const audio = new Audio(bubblePop2);
           audio.play();
         }, index * 100);
-        setViewProjectsClicked(false);
+        // setViewProjectsClicked(false);
       }
     });
 
@@ -51,8 +51,11 @@ const FloatingText = ({
     }
   };
 
+  // split the text into two lines
   const splitText = text.split(" ");
   const firstLine = splitText[0].split("");
+  // add a space to the end of the first line
+  firstLine.push(" ");
   const secondLine = splitText[1].split("");
 
   //   return (
