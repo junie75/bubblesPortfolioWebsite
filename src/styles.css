@@ -50,6 +50,16 @@ body {
   src: url(src/assets/fonts/Poppins-Medium.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(src/assets/fonts/Poppins-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Black";
+  src: url(src/assets/fonts/Poppins-Black.ttf) format("truetype");
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -76,8 +86,12 @@ body {
 .nav a {
   text-decoration: none;
   color: var(--primary-color);
-  font-size: 25px;
+  /* color: #fff; */
+  /* text-shadow: 1px 1px 1px #1c4a79; */
+  font-size: 35px;
   font-family: "Poppins-Medium";
+  font-family: "RubberDuck", sans-serif;
+  /* font-family: "Cloudy", sans-serif; */
 }
 .welcome {
   display: flex;
@@ -93,8 +107,11 @@ body {
 }
 
 .subHdr {
-  font-size: 80px;
+  font-size: 60px;
   font-family: "Poppins-Bold";
+  /* font-family: "RubberDuck", sans-serif; */
+  /* font-family: "PlaywriteNGModern-Regular"; */
+
   color: var(--primary-color);
 }
 
@@ -119,11 +136,23 @@ body {
   font-size: calc(10vw - 10px);
   font-family: "RubberDuck", sans-serif;
   color: #ffffff00;
+  background: radial-gradient(
+      circle at 85% 20%,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 15% 75%,
+      rgba(255, 255, 255, 0.2) 0%,
+      transparent 30%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
   /* letter outline */
-  -webkit-text-stroke-width: 0.01em;
+  -webkit-text-stroke-width: 0.015em;
   /* letter outline color */
   -webkit-text-stroke-color: rgba(255, 255, 255, 1);
-  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.15); */
   animation: floating 5s ease-in-out infinite;
   transition: transform 0.3s, text-shadow 200ms;
   cursor: pointer;

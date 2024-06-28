@@ -29,19 +29,19 @@ body {
 
 .projectsContainer {
   /* position: relative; */
-  display: flex;
+  /* display: flex; */
   /*flex: 1; */
   /* flex-wrap: wrap; */
   /* justify-content: space-around; */
-  /* justify-content: center;
-  align-items: center; */
+  /* justify-content: center; */
+  /* align-items: center; */
   /* align-content: space-evenly; */
   /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr; */
-  height: 100vh;
+  /* height: 100vh; */
   /* margin: 0 10px; */
-  width: 100vw;
+  /* width: 100vw; */
   /* overflow-x: scroll; */
 
   /* background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
