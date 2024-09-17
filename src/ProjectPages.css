@@ -1,0 +1,70 @@
+/* .toggleButton {
+  background-color: #f1f1f1;
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 20px;
+} */
+
+.projectPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin: 50px 200px 0; */
+  margin: 30px 200px;
+  /* margin-bottom: 60px; */
+  padding: 30px 40px;
+  /* width: 80vw; */
+  /* border: 1px solid #000; */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.projectTitle {
+  font-size: 60px;
+  font-family: "Poppins-Bold";
+  color: white;
+  color: var(--primary-color);
+  /* text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2); */
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* color: var(--secondary-color); */
+  font-size: 20px;
+  font-family: "Poppins-Medium";
+  /* margin: 20px 0; */
+}
+
+.projectContent section {
+  margin: 20px 0;
+}
+
+.projectContent h1 {
+  font-size: 30px;
+  font-family: "Poppins-Bold";
+  color: var(--secondary-color);
+}
+
+.projectContent ul {
+  margin-left: 50px;
+}
+
+.projectPage a {
+  text-decoration: none;
+  color: white;
+}

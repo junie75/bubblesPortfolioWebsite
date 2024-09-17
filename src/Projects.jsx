@@ -4,50 +4,49 @@ import delivered from "./assets/delivered2.png";
 import eStoreDB from "./assets/eStoreDB2.png";
 import buildMyPortfolio from "./assets/buildMyPortfolio2.png";
 import dinoDetectors from "./assets/dinoDetectors2.png";
+import ewcImage from "./assets/EWC.png";
+import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 // import Bubbles from "./Bubbles";
 // import Bubbles from "./Bubbles2";
 
 export default function Projects() {
   const projects = [
     {
-      projectName: "Delivered",
-      image: delivered,
-      description: "This is a project that was delivered",
-    },
-    {
-      projectName: "BuildMyPortfolio",
-      image: buildMyPortfolio,
-      description: "This is a project that was delivered",
-    },
-    {
-      projectName: "E-Store Database",
-      image: eStoreDB,
-      description: "This is a project that was delivered",
-    },
-    {
-      projectName: "Dino Detectors",
-      image: dinoDetectors,
-      description: "This is a project that was delivered",
+      projectName: "Wound Care Website",
+      image: ewcImage,
+      description:
+        "A sleek, user-friendly platform designed and deployed to streamline patient interactions and showcase the expert services of a local wound care clinic.",
+      link: "/businessWebsite",
     },
     {
       projectName: "Delivered",
       image: delivered,
-      description: "This is a project that was delivered",
+      description:
+        "A mobile app designed to notify university students of mail arrivals and enhance the efficiency of university mailrooms.",
+      link: "/delivered",
     },
+
     {
       projectName: "BuildMyPortfolio",
       image: buildMyPortfolio,
-      description: "This is a project that was delivered",
+      description:
+        "A web application to help users identify key job skills by scraping and analyzing recent job postings.",
+      link: "/buildMyPortfolio",
     },
     {
       projectName: "E-Store Database",
       image: eStoreDB,
-      description: "This is a project that was delivered",
+      description:
+        "A comprehensive database designed to manage an e-commerce store's inventory and sales data with a user-friendly GUI for database operations",
+      link: "/eStoreDB",
     },
     {
       projectName: "Dino Detectors",
       image: dinoDetectors,
-      description: "This is a project that was delivered",
+      description:
+        "A modern take on the classic Skannerz toy where users can scan real-life barcodes to collect a diverse range of dinosaurs.",
+      link: "/dinoDetectors",
     },
   ];
 
@@ -85,7 +84,9 @@ export default function Projects() {
               <p>{project.description}</p>
             </div>
 
-            <div className="bubbleBtn">View Project</div>
+            <div className="bubbleBtn">
+              <Link to={project.link}>View Project</Link>
+            </div>
           </div>
         </div>
       );
@@ -93,11 +94,14 @@ export default function Projects() {
   };
 
   return (
-    <div className="projectsContainer">
-      {/* <div className="bubbleDisplay"> */}
-      {/* <div className={["button", "prev"]} /> */}
-      {displayProjects()}
-      {/* <div className={["button", "next"]} /> */}
+    <div className="container">
+      <Navbar />
+      <div className="projectsContainer">
+        {/* <div className="bubbleDisplay"> */}
+        {/* <div className={["button", "prev"]} /> */}
+        {displayProjects()}
+        {/* <div className={["button", "next"]} /> */}
+      </div>
     </div>
   );
 

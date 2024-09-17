@@ -33,12 +33,13 @@ body {
   display: flex;
   flex: 1;
   /* height: 400vh; */
-  width: 80vw;
+  /* width: 80vw; */
   /* margin: 0 20%; */
   flex-direction: column;
   /* flex-wrap: wrap; */
   justify-content: center;
-  align-items: left;
+  align-items: center;
+  margin: 0 50px;
   /* background-color: rgba(255, 255, 255, 0.11);
   box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
   background: rgba(145, 186, 233, 0);
@@ -54,6 +55,7 @@ body {
   /* justify-content: left;
   align-items: center; */
   /* border: 2px solid brown; */
+  /* backdrop-filter: blur(5px); */
   margin: 50px 0;
 }
 
@@ -63,7 +65,7 @@ body {
   align-items: center;
   width: 60%;
   height: 90vh; /* Set the container height */
-  /* border: 2px solid yellow; */
+  /* border: 2px solid red; */
   overflow: hidden; /* Ensure overflow content is not visible */
 }
 
@@ -77,18 +79,21 @@ body {
   display: flex;
   flex-direction: column;
   /* flex: 1; */
-  justify-content: space-between;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   /* border: 2px solid blue; */
+  row-gap: 20px;
   height: 60vh;
+  width: 40vw;
 }
 
 .projectInfo {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  /* flex: 1; */
   justify-content: center;
-  align-items: left;
+  align-items: center;
+  text-align: center;
   /* border: 2px solid yellow; */
 }
 
@@ -149,6 +154,10 @@ body {
   /* animation: float 3s ease-in-out infinite; */
 }
 
+.bubbleBtn a {
+  text-decoration: none;
+  color: white;
+}
 /* .button {
   background-color: blue;
   height: 100px;

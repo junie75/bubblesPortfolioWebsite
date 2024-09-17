@@ -36,6 +36,11 @@ body {
 }
 
 @font-face {
+  font-family: "Rubik-Bold";
+  src: url(src/assets/fonts/Rubik-Bold.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "RubberDuck";
   src: url(src/assets/fonts/rubber-duck.Regular.ttf) format("truetype");
 }
@@ -72,6 +77,18 @@ body {
   /* background-attachment: fixed; */
 }
 
+.navContainer {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100vw;
+  height: 10%;
+  /* background-color: rgb(199, 239, 241);
+  background-color: white; */
+  /* position: fixed; */
+  /* border: 1px solid #000; */
+}
+
 .nav {
   display: flex;
   width: 38%;
@@ -80,6 +97,7 @@ body {
   align-items: center;
   padding: 30px 40px;
   margin: 0 40px;
+  /* background-color: white; */
   /* border: 1px solid #000; */
 }
 
@@ -88,9 +106,9 @@ body {
   color: var(--primary-color);
   /* color: #fff; */
   /* text-shadow: 1px 1px 1px #1c4a79; */
-  font-size: 35px;
+  font-size: 25px;
   font-family: "Poppins-Medium";
-  font-family: "RubberDuck", sans-serif;
+  /* font-family: "RubberDuck", sans-serif; */
   /* font-family: "Cloudy", sans-serif; */
 }
 .welcome {
@@ -111,7 +129,7 @@ body {
   font-family: "Poppins-Bold";
   /* font-family: "RubberDuck", sans-serif; */
   /* font-family: "PlaywriteNGModern-Regular"; */
-
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
   color: var(--primary-color);
 }
 
@@ -182,7 +200,7 @@ body {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   color: #fff;
   font-family: "Poppins-Bold";
-  font-size: 20px;
+  font-size: 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;

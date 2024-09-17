@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FloatingText from "./FloatingText";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -12,11 +13,12 @@ export default function Home() {
 
   return (
     <div className="container">
-      <div className="nav">
+      {/* <div className="nav">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-      </div>
+      </div> */}
+      <Navbar />
       <div className="welcome">
         <p className="subHdr">Hi! I'm Juni Ejere,</p>
         {/* <p className="hugeHdr">SOFTWARE ENGINEER</p> */}
