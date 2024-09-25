@@ -1,18 +1,12 @@
-import React, { useState } from "react";
-import SnackEmbed from "./SnackEmbed";
+import React from "react";
+
 import Navbar from "./Navbar";
 import "./ProjectPages.css";
 import { Link } from "react-router-dom";
 
 export default function DeliveredApp() {
-  const [toggleSnack, setToggleSnack] = useState(false);
-
-  const viewDemo = () => {
-    setToggleSnack(!toggleSnack);
-  };
-
   return (
-    <div className="container">
+    <div className="projectsContainer">
       <Navbar />
       {/* <div className="toggleButton" onClick={viewDemo}>
         View Demo

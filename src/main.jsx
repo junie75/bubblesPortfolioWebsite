@@ -5,6 +5,8 @@ import Home from "./Home.jsx";
 import Projects from "./Projects.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DeliveredApp from "./DeliveredApp.jsx";
+import EWC from "./EWC.jsx";
+import EStoreDatabaseSystem from "./EStoreDatabaseSystem.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
   {
     path: "/delivered",
     element: <DeliveredApp />,
+  },
+  {
+    path: "/businessWebsite",
+    element: <EWC />,
+  },
+  {
+    path: "/eStoreDB",
+    element: <EStoreDatabaseSystem />,
   },
 ]);
 
