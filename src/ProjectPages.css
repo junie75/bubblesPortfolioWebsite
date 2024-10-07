@@ -68,3 +68,23 @@
   text-decoration: none;
   color: white;
 }
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backBtn {
+  color: var(--primary-color) !important;
+  color: rgb(230, 67, 94) !important;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: underline !important;
+  font-size: 24px;
+  font-family: "Poppins-Medium";
+  cursor: pointer;
+  z-index: 20;
+  padding: 0 20px;
+}

@@ -59,12 +59,17 @@ export default function EStoreDatabaseSystem() {
             </p>
           </section>
         </div>
-        <div className="button">
-          <Link
-            to={"https://github.com/junie75/eStoreDatabaseSystem"}
-            target="blank"
-          >
-            View Repository
+        <div className="btnContainer">
+          <div className="button">
+            <Link
+              to={"https://github.com/junie75/eStoreDatabaseSystem"}
+              target="blank"
+            >
+              View Repository
+            </Link>
+          </div>
+          <Link to="/projects" className="backBtn">
+            Back
           </Link>
         </div>
       </div>

@@ -88,12 +88,17 @@ export default function DeliveredApp() {
           </section>
         </div>
         {/* <div className="projectTechnologies">Technologies</div> */}
-        <div className="button">
-          <Link
-            to={"https://snack.expo.dev/@junie75/delivered?platform=ios"}
-            target="blank"
-          >
-            View Demo
+        <div className="btnContainer">
+          <div className="button">
+            <Link
+              to={"https://snack.expo.dev/@junie75/delivered?platform=ios"}
+              target="blank"
+            >
+              View Demo
+            </Link>
+          </div>
+          <Link to="/projects" className="backBtn">
+            Back
           </Link>
         </div>
       </div>

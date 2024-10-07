@@ -7,6 +7,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import DeliveredApp from "./DeliveredApp.jsx";
 import EWC from "./EWC.jsx";
 import EStoreDatabaseSystem from "./EStoreDatabaseSystem.jsx";
+import BuildMyPortfolio from "./BuildMyPortfolio.jsx";
+import DinoDetectors from "./DinoDetectors.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
   {
     path: "/eStoreDB",
     element: <EStoreDatabaseSystem />,
+  },
+  {
+    path: "/buildMyPortfolio",
+    element: <BuildMyPortfolio />,
+  },
+  {
+    path: "/dinoDetectors",
+    element: <DinoDetectors />,
   },
 ]);
 

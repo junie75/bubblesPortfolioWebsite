@@ -75,9 +75,14 @@ export default function EWC() {
             </p>
           </section>
         </div>
-        <div className="button">
-          <Link to={"https://ejerewoundcare.com"} target="blank">
-            View Website
+        <div className="btnContainer">
+          <div className="button">
+            <Link to={"https://ejerewoundcare.com"} target="blank">
+              View Website
+            </Link>
+          </div>
+          <Link to="/projects" className="backBtn">
+            Back
           </Link>
         </div>
       </div>
