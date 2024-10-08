@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import "./ProjectPages.css";
+import ImageSlider from "./ImageSlider";
 
 const DinoDetectors = () => {
   return (
     <div className="projectsContainer">
       <Navbar />
+
       <div className="projectPage">
         <div className="projectTitle">Dino Detectors</div>
         <div className="projectVid">Video</div>

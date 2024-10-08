@@ -88,3 +88,51 @@
   z-index: 20;
   padding: 0 20px;
 }
+
+/* .sliderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.sliderItem {
+  width: 100%;
+  height: 100%;
+}
+
+.sliderItem img {
+  width: 100%;
+  height: 100%;
+} */
+
+.sliderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sliderItem img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-container {
+  width: 80%;
+  min-height: 500px;
+  overflow: hidden;
+  background-color: lightgrey; /* Temporary debugging */
+}
+
+.carousel-item {
+  width: 100px; /* Ensure the items take up full width */
+  height: 200px; /* Or any height you want */
+}
+
+/* Limit the image size to fit within the carousel item */
+.carousel-item img {
+  width: 100%; /* Makes the image responsive to the carousel's width */
+  max-height: 300px; /* Ensures the image doesn't grow too tall */
+  object-fit: cover; /* Ensures the image fits without distortion */
+}

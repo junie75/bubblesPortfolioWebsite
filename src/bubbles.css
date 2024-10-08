@@ -255,14 +255,14 @@ body {
   opacity: 0;
 } */
 
-.bubbleImage {
-  /* width: 90%; */
-  /* position: absolute; */
-  /* height: 100%; */
-  /* border: 1px solid white;
+/* .bubbleImage { */
+/* width: 90%; */
+/* position: absolute; */
+/* height: 100%; */
+/* border: 1px solid white;
   border-radius: 50%;
   border-left: 15px solid rgba(255, 255, 255, 0.5); */
-}
+/* } */
 
 .popSpan {
   display: flex;
