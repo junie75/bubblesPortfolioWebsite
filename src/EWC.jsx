@@ -2,14 +2,16 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import "./ProjectPages.css";
+import ewcImages from "./ewcCarousel";
+import ImageSlider from "./ImageSlider";
 
 export default function EWC() {
   return (
-    <div className="projectsContainer">
+    <div className="projectPageContainer">
       <Navbar />
       <div className="projectPage">
         <div className="projectTitle">Wound Care Website</div>
-        <div className="projectVid">Video</div>
+        <ImageSlider images={ewcImages} orientation="horizontal" />
         <div className="projectContent">
           <section>
             <h1>Overview</h1>

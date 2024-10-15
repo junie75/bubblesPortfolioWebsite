@@ -2,14 +2,16 @@ import React from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import "./ProjectPages.css";
+import ImageSlider from "./ImageSlider";
+import eStoreImages from "./esdsCarousel";
 
 export default function EStoreDatabaseSystem() {
   return (
-    <div className="projectsContainer">
+    <div className="projectPageContainer">
       <Navbar />
       <div className="projectPage">
         <div className="projectTitle">E-Store Database System</div>
-        <div className="projectVid">Video</div>
+        <ImageSlider images={eStoreImages} orientation="horizontal" />
         <div className="projectContent">
           <section>
             <h1>Overview</h1>

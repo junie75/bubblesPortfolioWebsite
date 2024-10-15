@@ -3,10 +3,12 @@ import React from "react";
 import Navbar from "./Navbar";
 import "./ProjectPages.css";
 import { Link } from "react-router-dom";
+import dlvrdImages from "./dlvrdCarousel.js";
+import ImageSlider from "./ImageSlider";
 
 export default function DeliveredApp() {
   return (
-    <div className="projectsContainer">
+    <div className="projectPageContainer">
       <Navbar />
       {/* <div className="toggleButton" onClick={viewDemo}>
         View Demo
@@ -21,7 +23,8 @@ export default function DeliveredApp() {
       </div> */}
       <div className="projectPage">
         <div className="projectTitle">Delivered App</div>
-        <div className="projectVid">Video</div>
+        {/* <div className="projectVid">Video</div> */}
+        <ImageSlider images={dlvrdImages} />
         <div className="projectContent">
           <section>
             <h1>Overview</h1>

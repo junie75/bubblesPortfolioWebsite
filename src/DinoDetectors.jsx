@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import "./ProjectPages.css";
 import ImageSlider from "./ImageSlider";
+// import { motion } from "framer-motion";
+import ddImages from "./ddCarousel";
 
 const DinoDetectors = () => {
   return (
-    <div className="projectsContainer">
+    <div className="projectPageContainer">
       <Navbar />
-
       <div className="projectPage">
         <div className="projectTitle">Dino Detectors</div>
-        <div className="projectVid">Video</div>
+        <ImageSlider images={ddImages} />
         <div className="projectContent">
           <section>
             <h1>Overview</h1>

@@ -15,16 +15,24 @@
   border-radius: 20px;
 } */
 
+.projectPageContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .projectPage {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* margin: 50px 200px 0; */
-  margin: 30px 200px;
+  /* margin: 30px 200px; */
   /* margin-bottom: 60px; */
   padding: 30px 40px;
-  /* width: 80vw; */
+  max-width: 80vw;
   /* border: 1px solid #000; */
   background-color: rgb(255, 255, 255);
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.2);
@@ -107,7 +115,7 @@
   height: 100%;
 } */
 
-.sliderContainer {
+/* .sliderContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -122,17 +130,74 @@
   width: 80%;
   min-height: 500px;
   overflow: hidden;
-  background-color: lightgrey; /* Temporary debugging */
+  background-color: lightgrey; /* Temporary debugging *
 }
 
 .carousel-item {
-  width: 100px; /* Ensure the items take up full width */
-  height: 200px; /* Or any height you want */
+  width: 100px; /* Ensure the items take up full width 
+  height: 200px; /* Or any height you want 
 }
 
-/* Limit the image size to fit within the carousel item */
+/* Limit the image size to fit within the carousel item 
 .carousel-item img {
-  width: 100%; /* Makes the image responsive to the carousel's width */
-  max-height: 300px; /* Ensures the image doesn't grow too tall */
-  object-fit: cover; /* Ensures the image fits without distortion */
+  width: 100%; /* Makes the image responsive to the carousel's width 
+  max-height: 300px; /* Ensures the image doesn't grow too tall /
+  object-fit: cover; /* Ensures the image fits without distortion /
+} */
+
+/* .carousel {
+  width: 100%;
+}
+
+.innerCarousel {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+
+.carouselItem img {
+  width: 100%;
+  /* height: 100%;
+  object-fit: cover; /
+  height: auto;
+} */
+
+/* container for overflow of images */
+.carousel {
+  cursor: grab;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* container to drag images within outer container */
+.innerCarousel {
+  display: flex;
+}
+
+.carouselItemVert {
+  min-height: 20rem;
+  min-width: 14rem;
+  padding: 5px 20px;
+}
+
+.carouselItemVert img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  pointer-events: none;
+  object-fit: scale-down;
+}
+
+.carouselItemHoriz {
+  min-height: 10rem;
+  min-width: 30rem;
+  padding: 5px 10px;
+}
+
+.carouselItemHoriz img {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 20px; */
+  pointer-events: none;
+  object-fit: scale-down;
 }

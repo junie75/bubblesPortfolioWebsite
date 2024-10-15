@@ -2,13 +2,16 @@ import React from "react";
 import Navbar from "./Navbar";
 import "./ProjectPages.css";
 import { Link } from "react-router-dom";
+import bmpImages from "./bmpCarousel";
+import ImageSlider from "./ImageSlider";
+
 export default function BuildMyPortfolio() {
   return (
-    <div className="projectsContainer">
+    <div className="projectPageContainer">
       <Navbar />
       <div className="projectPage">
         <div className="projectTitle">BuildMyPortfolio App</div>
-        <div className="projectVid">Video</div>
+        <ImageSlider images={bmpImages} orientation="horizontal" />
         <div className="projectContent">
           <section>
             <h1>Overview</h1>
