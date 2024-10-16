@@ -36,8 +36,9 @@ export default function DeliveredApp() {
               letters arrive, offering a comprehensive solution for mail
               management. By providing mobile notifications and access to
               mailroom information in one convenient location, Delivered ensures
-              that users are well-informed and no longer need to manually check
-              for their mail.
+              that users are well-informed and optimize sthe workflow of the
+              mailroom staff, allowing them to efficiently manage mail
+              deliveries and resolve issues.
             </p>
           </section>
           <section>
@@ -64,16 +65,24 @@ export default function DeliveredApp() {
             </p>
             <ul>
               <li>
-                Real-time notifications when a package or letter is received.
+                Notifications sent to recipients when a package or letter is
+                retrieved and ready for pick-up.
               </li>
               <li>
                 A centralized hub for mailroom information, such as hours of
-                operation, location maps, and dorm mailbox addresses.
+                operation, maps, and dorm mailbox addresses.
               </li>
-              <li>Help ticket submission and mail check requests.</li>
               <li>
-                A system that tracks how long packages have been in storage and
-                alerts staff when items approach their maximum storage duration.
+                An interactive map displaying the locations of all campus
+                mailrooms.
+              </li>
+              <li>
+                A help ticket system for users to report late or missing
+                packages, which mailroom staff can track and resolve.
+              </li>
+              <li>
+                A package storage tracking system that alerts staff when items
+                near their maximum storage duration.
               </li>
             </ul>
           </section>
@@ -84,9 +93,7 @@ export default function DeliveredApp() {
               management, Delivered is designed to be cross-platform and
               accessible for both iOS and Android users. The app was tested on
               both operating systems, ensuring functionality and user experience
-              across devices. The admin portal is designed to optimize the
-              workflow of the mailroom staff, allowing them to efficiently
-              manage mail deliveries and resolve issues.
+              across devices.
             </p>
           </section>
         </div>

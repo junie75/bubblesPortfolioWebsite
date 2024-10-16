@@ -9,12 +9,17 @@ import EWC from "./EWC.jsx";
 import EStoreDatabaseSystem from "./EStoreDatabaseSystem.jsx";
 import BuildMyPortfolio from "./BuildMyPortfolio.jsx";
 import DinoDetectors from "./DinoDetectors.jsx";
+import About from "./About.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
     exact: true,
+  },
+  {
+    path: "/about",
+    element: <About />,
   },
   {
     path: "/projects",

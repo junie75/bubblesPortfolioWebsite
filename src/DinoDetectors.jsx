@@ -18,12 +18,14 @@ const DinoDetectors = () => {
             <h1>Overview</h1>
             <p>
               Dino Detectors is a web application inspired by a toy called
-              Skannerz, released in 2000. Our team built on the concept of
-              scanning barcodes and created an app where users can discover and
-              capture dinosaurs. When a user scans a barcode, a dinosaur may
-              appear, which they can capture and store in their inventory. The
-              app also features a Dinopedia, where users can learn more about
-              the dinosaurs they’ve collected.
+              Skannerz, released in 2000. This project was the result of a group
+              of four developers who attended RowdyHacks Hackathon hosted by
+              UTSA in 2024. Our team built on the concept of scanning barcodes
+              and created a web app where users can discover and capture
+              dinosaurs. When a user scans a barcode, a dinosaur may appear,
+              which they can capture and store in their inventory. The app also
+              features a Dinopedia, where users can learn more about the
+              dinosaurs they’ve collected.
             </p>
           </section>
 
@@ -55,13 +57,15 @@ const DinoDetectors = () => {
                 the MediaDevices API with JavaScript using the `getUserMedia`
                 function for the first time. I also implemented the backend
                 functionality in Python Flask to process the barcode data
-                received from the front-end.
+                received from the front-end, and perform the calculations to
+                decide which dinosaur the user would receive based on it's
+                rarity.
               </li>
-              <li>
+              {/* <li>
                 Dinosaur capture and inventory: When a barcode is scanned, a
                 dinosaur may appear, and users can capture and view it in their
                 inventory.
-              </li>
+              </li> */}
               <li>
                 Dinopedia: A detailed page where users can explore the dinosaurs
                 they’ve collected and learn more about their traits.
@@ -108,7 +112,9 @@ const DinoDetectors = () => {
           </section>
           <div className="btnContainer">
             <div className="button">
-              <Link to="https://rowdy-hacks.onrender.com">View Repository</Link>
+              <Link to="https://github.com/junie75/Rowdy-Hacks" target="_blank">
+                View Repository
+              </Link>
             </div>
             <Link to="/projects" className="backBtn">
               Back

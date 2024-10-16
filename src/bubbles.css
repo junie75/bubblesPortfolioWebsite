@@ -52,11 +52,25 @@ body {
 .projectDiv {
   display: flex;
   flex-direction: row;
-  /* justify-content: left;
-  align-items: center; */
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.11);
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+  background: rgba(145, 186, 233, 0.1);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 80px; */
   /* border: 2px solid brown; */
   /* backdrop-filter: blur(5px); */
+  width: 80%;
   margin: 50px 0;
+}
+
+.projectDiv.bubbleBtn {
+  width: 80vw;
+  border-radius: 100px;
+  height: 80vh;
 }
 
 .imgContainer {
@@ -64,7 +78,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 60%;
-  height: 90vh; /* Set the container height */
+  height: 100%; /* Set the container height */
+  padding: 20px 0;
   /* border: 2px solid red; */
   overflow: hidden; /* Ensure overflow content is not visible */
 }
@@ -85,6 +100,7 @@ body {
   row-gap: 20px;
   height: 60vh;
   width: 40vw;
+  padding: 20px;
 }
 
 .projectInfo {

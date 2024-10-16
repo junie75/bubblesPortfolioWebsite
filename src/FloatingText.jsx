@@ -52,11 +52,28 @@ const FloatingText = ({
   };
 
   // split the text into two lines
-  const splitText = text.split(" ");
-  const firstLine = splitText[0].split("");
-  // add a space to the end of the first line
-  firstLine.push(" ");
-  const secondLine = splitText[1].split("");
+  // const splitText = text.split(" ");
+  // const firstLine = splitText[0].split("");
+  // // add a space to the end of the first line
+  // firstLine.push(" ");
+  // const secondLine = splitText[1].split("");
+
+  function splitTextIntoLines(text) {
+    // Split the text into an array of words
+    const words = text.split(" ");
+
+    // Create an array to hold the split lines
+    const lines = [];
+
+    // Loop through each word and split it into characters
+    for (let word of words) {
+      const line = word.split(""); // Split word into characters
+      line.push(" "); // Optionally, add a space to the end of the word
+      lines.push(line); // Push the line to the lines array
+    }
+
+    return lines;
+  }
 
   //   return (
   //     <div className="floatingText">
@@ -75,32 +92,54 @@ const FloatingText = ({
   //   );
   // };
 
+  //   return (
+  //     <div className="floatingText">
+  //       <div className="floatingLine">
+  //         {firstLine.map((char, index) => (
+  //           <div
+  //             key={index}
+  //             onClick={handleBubbleClick}
+  //             className="floatingSpan"
+  //             style={{ animationDelay: `${index * 0.3}s` }}
+  //           >
+  //             {char === " " ? "\u00A0" : char}
+  //           </div>
+  //         ))}
+  //       </div>
+  //       <div className="floatingLine">
+  //         {secondLine.map((char, index) => (
+  //           <div
+  //             key={index}
+  //             onClick={handleBubbleClick}
+  //             className="floatingSpan"
+  //             style={{ animationDelay: `${index * 0.3}s` }}
+  //           >
+  //             {char === " " ? "\u00A0" : char}
+  //           </div>
+  //         ))}
+  //       </div>
+  //     </div>
+  //   );
+  // };
+
+  const lines = splitTextIntoLines(text);
+
   return (
     <div className="floatingText">
-      <div className="floatingLine">
-        {firstLine.map((char, index) => (
-          <div
-            key={index}
-            onClick={handleBubbleClick}
-            className="floatingSpan"
-            style={{ animationDelay: `${index * 0.3}s` }}
-          >
-            {char === " " ? "\u00A0" : char}
-          </div>
-        ))}
-      </div>
-      <div className="floatingLine">
-        {secondLine.map((char, index) => (
-          <div
-            key={index}
-            onClick={handleBubbleClick}
-            className="floatingSpan"
-            style={{ animationDelay: `${index * 0.3}s` }}
-          >
-            {char === " " ? "\u00A0" : char}
-          </div>
-        ))}
-      </div>
+      {lines.map((line, lineIndex) => (
+        <div key={lineIndex} className="floatingLine">
+          {line.map((char, charIndex) => (
+            <div
+              key={charIndex}
+              onClick={handleBubbleClick}
+              className="floatingSpan"
+              style={{ animationDelay: `${charIndex * 0.3}s` }}
+            >
+              {char === " " ? "\u00A0" : char}
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };

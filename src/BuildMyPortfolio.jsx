@@ -32,11 +32,12 @@ export default function BuildMyPortfolio() {
             <p>
               The idea for BuildMyPortfolio stemmed from my own struggles of
               feeling underqualified when applying for jobs. I found that many
-              job postings listed "preferred" skills that I hadn't yet mastered,
-              leaving me feeling unprepared and unsure of what to focus on. This
-              project was designed to give users an easy way to understand what
-              skills are in demand for their dream job by analyzing job postings
-              and displaying the most relevant qualifications.
+              job postings listed "preferred" skills that would vary from
+              company to company, leaving me feeling unprepared and unsure of
+              what to focus on. This project was designed to give users an easy
+              way to understand what skills are in demand for their dream job by
+              analyzing job postings and displaying the most relevant
+              qualifications.
             </p>
           </section>
 
@@ -95,11 +96,12 @@ export default function BuildMyPortfolio() {
             <h1>Technologies Used</h1>
             <p>
               BuildMyPortfolio was built using ReactJS on the frontend and
-              Python Flask for the backend. The web scraper uses Python's Numpy
-              and Pandas libraries for data analysis and interacts with external
-              APIs to fetch skill descriptions. The backend communicates with
-              the frontend by creating endpoints that handle requests, process
-              data, and send relevant responses back to the client.
+              Python Flask for the backend. The web scraper is designed to
+              utilize parallel processing for fetching and extracting skills
+              from job posting, then uses Python's Numpy and Pandas libraries
+              for data analysis. The backend communicates with the frontend by
+              creating endpoints that handle requests, process data, and send
+              relevant responses back to the client.
             </p>
           </section>
         </div>

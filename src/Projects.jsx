@@ -73,7 +73,7 @@ export default function Projects() {
         //   project={project.projectName}
         //   image={project.image}
         // />
-        <div className="projectDiv" key={index}>
+        <div className="projectDiv bubbleBtn" key={index}>
           <div className="imgContainer">
             <img src={project.image} alt="project" className="projectImage" />
           </div>
