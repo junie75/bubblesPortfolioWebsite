@@ -1,17 +1,15 @@
 import React from "react";
 import FloatingText from "./FloatingText";
 import Navbar from "./Navbar";
-
+import "./bubbles.css";
 export default function About() {
   return (
-    <div className="container">
+    <div className="aboutContainer">
       <Navbar />
       <FloatingText text="What's a Juni?" />
-      <div className="aboutBoxes">
+      <div className="aboutDiv">
         <div className="aboutBox">
-          <h2>
-            Background <span className="expand">-</span>
-          </h2>
+          <h2 className="subHdr">Background</h2>
           {/* <img className="arrow" src="../images/chevron-svgrepo-com.svg" /> */}
           <p>
             I am a senior Computer Information Systems major at St. Mary's
@@ -25,9 +23,7 @@ export default function About() {
           </p>
         </div>
         <div className="aboutBox">
-          <h2>
-            Skillset <span className="expand">-</span>
-          </h2>
+          <h2 className="subHdr">Skillset</h2>
           {/* <img className="arrow" src="../images/chevron-svgrepo-com.svg" /> */}
           <p>
             I am proficient in C/C++, Java, and experienced in designing
@@ -40,9 +36,7 @@ export default function About() {
           </p>
         </div>
         <div className="aboutBox">
-          <h2>
-            Objective <span className="expand">-</span>
-          </h2>
+          <h2 className="subHdr">Objective</h2>
           {/* <object className="arrow" type="image/svg+xml" data="../images/chevron-svgrepo-com.svg"></object> */}
           <p>
             I am passionate about the possibilities that programming offers in
