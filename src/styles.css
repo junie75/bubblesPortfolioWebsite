@@ -251,6 +251,119 @@ body {
   padding: 20px;
 } */
 
+/**** CONTACT PAGE *****/
+.contactPage {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins-Medium";
+  font-size: 20px;
+}
+
+.contactPage section {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80vw;
+  padding: 0 10%;
+  column-gap: 60px;
+}
+
+.contactCard {
+  /* border: 2px solid purple; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.918);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+  padding: 20px;
+  border-radius: 20px;
+  color: black;
+
+  .contactInfo h2 {
+    font-family: "Poppins-Bold";
+    text-align: center;
+  }
+
+  .contactInfo p {
+    font-family: "Poppins-Medium";
+  }
+}
+
+.contactCard .photo {
+  height: 200px;
+  width: 200px;
+  margin: 10px 0;
+}
+
+.contactCard .photo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.contactPage .button {
+  font-size: 20px;
+}
+
+.links {
+  margin: 10px 0;
+}
+
+.smallIcon {
+  height: 50px;
+  width: 50px;
+  margin: 0 2px;
+}
+
+.contactForm {
+  border: 2px solid orange;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.918);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.contactForm form {
+  /* border: 2px solid purple; */
+  margin: 20px 0;
+  /* width: 60%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+
+  button {
+    align-self: center;
+  }
+}
+
+.contactForm label {
+  text-align: left;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: unset;
+  border: unset;
+  border-bottom: 2px solid orange;
+}
+
 @keyframes floating {
   0% {
     transform: translateY(0);

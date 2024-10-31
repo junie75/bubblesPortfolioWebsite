@@ -10,6 +10,7 @@ import EStoreDatabaseSystem from "./EStoreDatabaseSystem.jsx";
 import BuildMyPortfolio from "./BuildMyPortfolio.jsx";
 import DinoDetectors from "./DinoDetectors.jsx";
 import About from "./About.jsx";
+import Contact from "./Contact.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/dinoDetectors",
     element: <DinoDetectors />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 
