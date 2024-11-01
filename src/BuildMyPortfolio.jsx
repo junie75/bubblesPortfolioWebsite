@@ -107,11 +107,18 @@ export default function BuildMyPortfolio() {
         </div>
         <div className="btnContainer">
           <div className="button">
-            <Link
+            {/* <Link
               to={"https://buildmyportfolio-cb11632f5185.herokuapp.com"}
               target="blank"
             >
               View Project
+            </Link> */}
+
+            <Link
+              to="https://github.com/junie75/BuildMyPortfolio"
+              target="_blank"
+            >
+              View Repository
             </Link>
           </div>
           <Link to="/projects" className="backBtn">

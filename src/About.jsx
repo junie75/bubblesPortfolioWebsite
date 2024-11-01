@@ -116,8 +116,12 @@ export default function About() {
             // border: "1px solid black",
           }}
         >
-          <div className="button">Download Resume</div>
-          <div className="button">View Github</div>
+          <a href="/resumeFall24v2.pdf" download>
+            <div className="button">Download Resume</div>
+          </a>
+          <a href="https://github.com/junie75" target="_blank">
+            <div className="button">View Github</div>
+          </a>
         </div>
       </div>
     </div>
