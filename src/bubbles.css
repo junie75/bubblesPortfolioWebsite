@@ -74,9 +74,9 @@ body {
 }
 
 .projectDiv.bubbles {
-  width: 300px;
+  width: 600px;
   /* border-radius: 50%; */
-  height: 300px;
+  height: 600px;
   backdrop-filter: blur(2px);
   cursor: pointer;
   transition: 500ms;
@@ -468,6 +468,51 @@ body {
     transform: translate(-105px, -105px);
   }
 }
+
+@media (max-width: 1440px) {
+  .projectDiv.bubbles {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projectsContainer {
+    /* width: 100vw; */
+    margin: 0;
+  }
+  .projectDiv.bubbles {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectsContainer {
+    padding-top: 20px;
+  }
+
+  .projectDiv.bubbles {
+    width: 450px;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectDiv.bubbles {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .projectDiv.bubbles {
+    width: 99vw;
+    height: 99vw;
+  }
+}
+
 /* @media (max-width: 598px) {
   .bubbles {
     width: 200px;

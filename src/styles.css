@@ -42,7 +42,7 @@ body {
 
 @font-face {
   font-family: "RubberDuck";
-  src: url(/fonts/rubber-duck.Regular.ttf) format("truetype");
+  src: url(public/fonts/rubber-duck.Regular.ttf) format("truetype");
 }
 
 @font-face {
@@ -114,6 +114,16 @@ a {
   /* font-family: "RubberDuck", sans-serif; */
   /* font-family: "Cloudy", sans-serif; */
 }
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenu a {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
 .welcome {
   display: flex;
   /* flex-shrink: 1; */
@@ -448,11 +458,29 @@ a {
   }
 
   .nav a {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .subHdr {
     font-size: 60px;
+  }
+
+  .aboutContainer .floatingSpan {
+    font-size: 100px;
+  }
+
+  .aboutBox {
+    .subHdr {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .aboutContainer .button {
+    font-size: 20px;
   }
   /* 
   .floatingSpan {
@@ -462,13 +490,13 @@ a {
 
 @media (max-width: 1025px) {
   .nav {
-    width: 60%;
+    width: 50%;
     padding: 15px 20px;
     margin: 0 20px;
   }
 
   .nav a {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .welcome {
@@ -494,11 +522,37 @@ a {
     font-size: 18px;
     padding: 8px 16px;
   }
+
+  .aboutContainer .floatingText {
+    flex-direction: row;
+  }
+
+  .aboutContainer .floatingSpan {
+    font-size: 90px;
+  }
+
+  .aboutDiv {
+    width: 90vw;
+  }
+
+  .aboutBox {
+    .subHdr {
+      font-size: 25px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .aboutContainer .button {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 768px) {
   .nav {
-    width: 70%;
+    width: 60%;
     padding: 10px 15px;
     margin: 0 10px;
   }
@@ -515,20 +569,52 @@ a {
     font-size: 16px;
     padding: 6px 12px;
   }
+
+  .aboutContainer .floatingSpan {
+    font-size: 60px;
+  }
+
+  .aboutBox {
+    .subHdr {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .aboutContainer .buttonHolder {
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+  }
+
+  .aboutContainer .button {
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+  }
 }
 
 @media (max-width: 480px) {
+  .navContainer {
+    justify-content: left;
+  }
+
   .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
+    display: none;
   }
 
   .nav a {
     font-size: 14px;
     padding: 5px 0;
+  }
+
+  .mobileMenu {
+    display: flex;
+    font-size: 30px;
+    margin: 0 20px;
   }
 
   .welcome {
@@ -551,6 +637,40 @@ a {
   .button {
     font-size: 14px;
     padding: 5px 10px;
+  }
+
+  .mobileMenu {
+    margin: 0 10px;
+  }
+
+  .aboutContainer .floatingText {
+    display: none;
+  }
+
+  .aboutContainer .floatingSpan {
+    font-size: 40px;
+  }
+
+  .aboutDiv {
+    width: 95vw;
+    padding: 20px;
+    margin: 10px 0;
+    /* margin: 0 40px; */
+  }
+
+  .aboutBox {
+    .subHdr {
+      font-size: 18px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .aboutContainer .button {
+    font-size: 15px;
   }
 
   @keyframes floating {
