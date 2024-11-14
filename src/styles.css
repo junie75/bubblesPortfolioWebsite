@@ -73,6 +73,7 @@ a {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+
   /* background-image: url(src/assets/sky1920x1080.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -273,21 +274,28 @@ a {
   align-items: center;
   font-family: "Poppins-Medium";
   font-size: 20px;
+  /* border: 2px solid red; */
 }
 
 .contactPage section {
-  /* border: 2px solid red; */
+  /* border: 2px solid purple; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 80vw;
-  padding: 0 50px;
-  column-gap: 60px;
+  align-items: center;
+  width: 60rem;
+  height: 30rem;
+  /* padding: 0 50px; */
+  column-gap: 40px;
   margin-bottom: 20px;
 }
 
+.contactPage section .button {
+  font-size: 20px;
+}
+
 .contactCard {
-  /* border: 2px solid purple; */
+  border: 2px solid green;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -295,11 +303,11 @@ a {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.918);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-
   padding: 20px;
   border-radius: 20px;
   color: black;
-
+  width: 100%;
+  height: 100%;
   .contactInfo h2 {
     font-family: "Poppins-Bold";
     text-align: center;
@@ -324,10 +332,6 @@ a {
   object-position: top;
 }
 
-.contactPage .button {
-  font-size: 20px;
-}
-
 .links {
   margin: 10px 0;
 }
@@ -347,13 +351,15 @@ a {
   background-color: rgba(255, 255, 255, 0.918);
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   /* box-shadow: 0px 0px 5px orange; */
-  padding: 20px;
+  padding: 40px;
   border-radius: 20px;
+  height: 100%;
+  width: 100%;
 }
 
 .contactForm form {
   /* border: 2px solid purple; */
-  margin: 20px 0;
+  /* margin: 20px 0; */
   /* width: 60%; */
   display: flex;
   flex-direction: column;
@@ -436,19 +442,27 @@ a {
   }
 }
 
-/* @media (max-width: 1400px) {
-  .nav a {
-    font-size: 20px;
-  }
+@media (min-width: 1445px) {
+  .contactPage section {
+    width: 80rem;
+    height: 50rem;
+    font-size: 30px;
 
-  .subHdr {
-    font-size: 40px;
-  }
+    .button {
+      font-size: 25px;
+    }
 
-  .floatingSpan {
-    font-size: 110px;
+    .smallIcon {
+      height: 40px;
+      width: 40px;
+    }
+
+    .contactCard .photo {
+      height: 250px;
+      width: 250px;
+    }
   }
-} */
+}
 
 /* Media Queries for Responsive Design */
 @media (max-width: 1400px) {
@@ -548,6 +562,96 @@ a {
   .aboutContainer .button {
     font-size: 20px;
   }
+
+  .contactPage section {
+    width: 47rem;
+    height: 30rem;
+    font-size: 17px;
+
+    .button {
+      font-size: 18px;
+    }
+
+    .smallIcon {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .navContainer {
+    height: 5%;
+  }
+  .nav {
+    width: 60%;
+    padding: 10px 15px;
+    margin: 0 10px;
+  }
+
+  .nav a {
+    font-size: 14px;
+  }
+
+  .subHdr {
+    font-size: 25px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .aboutContainer .floatingSpan {
+    font-size: 60px;
+  }
+
+  .aboutBox {
+    .subHdr {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .aboutContainer .buttonHolder {
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+  }
+
+  .aboutContainer .button {
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .contactPage section {
+    width: 25rem;
+    height: 80%;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+
+    .button {
+      font-size: 16px;
+    }
+
+    .smallIcon {
+      height: 30px;
+      width: 30px;
+    }
+
+    .contactCard .photo {
+      height: 150px;
+      width: 150px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -594,6 +698,31 @@ a {
     font-size: 18px;
     text-align: center;
     width: 200px;
+  }
+
+  .contactPage section {
+    width: 25rem;
+    height: 100%;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+
+    .button {
+      font-size: 16px;
+    }
+
+    .smallIcon {
+      height: 30px;
+      width: 30px;
+    }
+
+    .contactCard .photo {
+      height: 150px;
+      width: 150px;
+    }
   }
 }
 
@@ -673,15 +802,44 @@ a {
     font-size: 15px;
   }
 
-  @keyframes floating {
-    0% {
-      transform: translateY(0);
+  .contactPage section {
+    width: 18rem;
+    height: 50rem;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+
+    .button {
+      font-size: 16px;
     }
-    50% {
-      transform: translateY(-15px);
+
+    .smallIcon {
+      height: 30px;
+      width: 30px;
     }
-    100% {
-      transform: translateY(0);
+
+    .contactCard .photo {
+      height: 150px;
+      width: 150px;
     }
+
+    .contactForm {
+      padding: 20px;
+    }
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

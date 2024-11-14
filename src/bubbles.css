@@ -477,6 +477,7 @@ body {
 }
 
 @media (max-width: 1024px) {
+  /* gives more rooms for bubbles */
   .projectsContainer {
     /* width: 100vw; */
     margin: 0;
@@ -487,6 +488,7 @@ body {
   }
 }
 
+/* bubbles move to vertical */
 @media (max-width: 768px) {
   .projectsContainer {
     padding-top: 20px;
