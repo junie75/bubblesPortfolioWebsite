@@ -23,7 +23,7 @@ export default function Navbar() {
           aria-haspopup="true"
           onClick={handleOpen}
         >
-          <span class="material-symbols-outlined">menu</span>
+          <span className="material-symbols-outlined">menu</span>
         </Button>
         <Menu
           keepMounted
