@@ -49,7 +49,7 @@ const ImageSlider = ({
                   <motion.div
                     className="carouselItemVert"
                     key={index}
-                    onClick={handleImageClick(index)}
+                    // onClick={handleImageClick(index)}
                   >
                     <img src={image} alt="imageofProject" />
                   </motion.div>
@@ -60,7 +60,7 @@ const ImageSlider = ({
                   <motion.div
                     className="carouselItemHoriz"
                     key={index}
-                    onClick={() => handleImageClick(image)} //pass the image to the handleImageClick function
+                    onTap={() => handleImageClick(image)} //using onTap instead of onClick to avoid modal opening while dragging carousel
                   >
                     <img src={image} alt="imageofProject" />
                   </motion.div>

@@ -42,7 +42,7 @@ body {
 
 @font-face {
   font-family: "RubberDuck";
-  src: url(/fonts/rubber-duck.Regular.ttf) format("truetype");
+  src: url(public/fonts/rubber-duck.Regular.ttf) format("truetype");
 }
 
 @font-face {

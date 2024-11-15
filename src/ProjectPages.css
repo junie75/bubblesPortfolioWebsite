@@ -191,6 +191,7 @@
 }
 
 .carouselItemHoriz {
+  position: relative;
   min-height: 10rem;
   min-width: 30rem;
   padding: 5px 10px;
@@ -204,7 +205,14 @@
   /* border-radius: 20px; */
   pointer-events: none;
   object-fit: scale-down;
+  z-index: 1000;
   /* border: 1px solid purple; */
+}
+
+.carouselItemHoriz .expand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .sliderModal {

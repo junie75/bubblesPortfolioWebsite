@@ -34,8 +34,6 @@ export default function EStoreDatabaseSystem() {
           orientation="horizontal"
           setCurrentImage={setCurrentImage}
           toggleModal={toggleModal}
-          // modalOpen={modalOpen}
-          // setModalOpen={setModalOpen}
         />
         {modalOpen && sliderModal(currentImage)}
         <div className="projectContent">
