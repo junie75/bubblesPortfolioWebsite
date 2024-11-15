@@ -4,7 +4,14 @@ import { motion } from "framer-motion";
 import ddImages from "./ddCarousel.js";
 import "./ProjectPages.css";
 
-const ImageSlider = ({ images, orientation = "vertical" }) => {
+const ImageSlider = ({
+  images,
+  orientation = "vertical",
+  setCurrentImage,
+  // modalOpen,
+  // setModalOpen,
+  toggleModal,
+}) => {
   // state to store the width of the carousel
   const [width, setWidth] = useState(0);
 
@@ -15,6 +22,17 @@ const ImageSlider = ({ images, orientation = "vertical" }) => {
   useEffect(() => {
     setWidth(carouselRef.current.scrollWidth - carouselRef.current.offsetWidth);
   }, []);
+
+  const handleImageClick = (image) => {
+    // console.log(`Image at index ${index} clicked`);
+    console.log(`Image ${image} clicked`);
+    setCurrentImage(image);
+    toggleModal();
+    // setModalImage(index);
+    // if (!modalOpen) {
+    //   setModalOpen(true);
+    // }
+  };
 
   return (
     <motion.div ref={carouselRef} className="carousel">
@@ -28,14 +46,22 @@ const ImageSlider = ({ images, orientation = "vertical" }) => {
           orientation === "vertical"
             ? images.map((image, index) => {
                 return (
-                  <motion.div className="carouselItemVert" key={index}>
+                  <motion.div
+                    className="carouselItemVert"
+                    key={index}
+                    onClick={handleImageClick(index)}
+                  >
                     <img src={image} alt="imageofProject" />
                   </motion.div>
                 );
               })
             : images.map((image, index) => {
                 return (
-                  <motion.div className="carouselItemHoriz" key={index}>
+                  <motion.div
+                    className="carouselItemHoriz"
+                    key={index}
+                    onClick={() => handleImageClick(image)} //pass the image to the handleImageClick function
+                  >
                     <img src={image} alt="imageofProject" />
                   </motion.div>
                 );

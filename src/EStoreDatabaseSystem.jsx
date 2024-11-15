@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import "./ProjectPages.css";
@@ -6,12 +6,38 @@ import ImageSlider from "./ImageSlider";
 import eStoreImages from "./esdsCarousel";
 
 export default function EStoreDatabaseSystem() {
+  const [currentImage, setCurrentImage] = useState(eStoreImages[0]);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+    console.log("modalOpen: ", modalOpen);
+  };
+
+  const sliderModal = () => {
+    return (
+      <div className="sliderModal">
+        <div className="modalImage" onClick={toggleModal}>
+          {console.log("currentImage: ", currentImage)}
+          <img src={currentImage} alt="modalImage" />
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="projectPageContainer">
       <Navbar />
       <div className="projectPage">
         <div className="projectTitle">E-Store Database System</div>
-        <ImageSlider images={eStoreImages} orientation="horizontal" />
+        <ImageSlider
+          images={eStoreImages}
+          orientation="horizontal"
+          setCurrentImage={setCurrentImage}
+          toggleModal={toggleModal}
+          // modalOpen={modalOpen}
+          // setModalOpen={setModalOpen}
+        />
+        {modalOpen && sliderModal(currentImage)}
         <div className="projectContent">
           <section>
             <h1>Overview</h1>
