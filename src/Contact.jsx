@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import Navbar from "./Navbar";
-import headshot from "./assets/headshot4.JPG";
-import github from "./assets/github (1).png";
-import linkedin from "./assets/linkedin.png";
+import headshot from "./assets/headshot4.webp";
+import github from "./assets/github (1).webp";
+import linkedin from "./assets/linkedin.webp";
 import emailjs from "@emailjs/browser";
 import Modal from "./Modal";
 
