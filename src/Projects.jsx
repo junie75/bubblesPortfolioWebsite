@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./bubbles.css";
-import delivered from "./assets/delivered2.png";
-import eStoreDB from "./assets/eStoreDB2.png";
-import buildMyPortfolio from "./assets/buildMyPortfolio2.png";
-import dinoDetectors from "./assets/dinoDetectors2.png";
-import ewcImage from "./assets/EWC.png";
+import delivered from "./assets/delivered2.webp";
+import eStoreDB from "./assets/eStoreDB2.webp";
+import buildMyPortfolio from "./assets/buildMyPortfolio2.webp";
+import dinoDetectors from "./assets/dinoDetectors2.webp";
+import ewcImage from "./assets/EWC.webp";
 import Navbar from "./Navbar";
 import bubblePop2 from "./assets/bubblePop2.mp4";
 import { Link, useNavigate } from "react-router-dom";
