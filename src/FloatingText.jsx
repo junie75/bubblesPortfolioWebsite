@@ -8,6 +8,8 @@ const FloatingText = ({
   setViewProjectsClicked,
   navigate,
 }) => {
+  const popSound = new Audio(bubblePop2);
+  popSound.preload = "auto";
   if (viewProjectsClicked) {
     const spans = document.querySelectorAll(".floatingSpan");
 
@@ -19,8 +21,8 @@ const FloatingText = ({
           span.style.animation =
             "pop 80ms cubic-bezier(0.16, 0.87, 0.48, 0.99) forwards";
           span.style.opacity = "0";
-          const audio = new Audio(bubblePop2);
-          audio.play();
+          // const audio = new Audio(bubblePop2);
+          popSound.play();
         }, index * 100);
         // setViewProjectsClicked(false);
       }
@@ -38,8 +40,8 @@ const FloatingText = ({
 
     // if the bubble is not already popped and the bubble is not a space apply the pop animation
     if (bubble.style.opacity != "0" && bubble.textContent != "\u00A0") {
-      new Audio(bubblePop2).play();
-
+      // new Audio(bubblePop2).play();
+      popSound.play();
       bubble.style.animation = `pop 80ms cubic-bezier(0.16, 0.87, 0.48, 0.99) forwards`;
       console.log(bubble.style.animation);
 

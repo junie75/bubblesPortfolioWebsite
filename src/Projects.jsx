@@ -55,6 +55,9 @@ export default function Projects() {
 
   const [currentProject, setCurrentProject] = useState(projects[0]);
 
+  const popSound = new Audio(bubblePop2);
+  popSound.preload = "auto";
+
   // const displayProjects = () => {
   //   return Object.keys(projects).map((project) => {
   //     return (
@@ -73,7 +76,8 @@ export default function Projects() {
     const bubble = event.currentTarget; //handle the bubble div (current target refers to the element to which div handler is attached)
     // if the bubble is not already popped and the bubble is not a space apply the pop animation
     // if (bubble.style.opacity != "0" && bubble.textContent != "\u00A0") {
-    new Audio(bubblePop2).play();
+    // new Audio(bubblePop2).play();
+    popSound.play();
 
     bubble.style.animation = `pop 80ms cubic-bezier(0.16, 0.87, 0.48, 0.99) forwards`;
     console.log(bubble.style.animation);
