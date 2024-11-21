@@ -18,12 +18,10 @@ const FloatingText = ({
       if (span.style.opacity !== "0") {
         // pop the bubble letter one at a time in order
         setTimeout(() => {
-          // span.style.animation =
-          //   "pop 80ms cubic-bezier(0.16, 0.87, 0.48, 0.99) forwards";
-          span.classList.add("bubble-pop");
+          span.style.animation =
+            "pop 80ms cubic-bezier(0.16, 0.87, 0.48, 0.99) forwards";
           span.style.opacity = "0";
           // const audio = new Audio(bubblePop2);
-          popSound.currentTime = 0; //reset the audio to the beginning
           popSound.play();
         }, index * 100);
         // setViewProjectsClicked(false);
@@ -31,11 +29,10 @@ const FloatingText = ({
     });
 
     // navigate to the projects page after all spans have popped
-    const totalAnimationTime = spans.length * 100 + 300;
     setTimeout(() => {
       navigate("/projects");
       setViewProjectsClicked(false);
-    }, totalAnimationTime);
+    }, spans.length * 100 + 300);
   }
 
   const handleBubbleClick = (event) => {
