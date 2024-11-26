@@ -49,25 +49,21 @@ body {
 @font-face {
   font-family: "Poppins-Bold";
   src: url(/fonts/Poppins-Bold.ttf) format("truetype");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins-Medium";
   src: url(/fonts/Poppins-Medium.ttf) format("truetype");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins-Light";
   src: url(/fonts/Poppins-Light.ttf) format("truetype");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins-Black";
   src: url(/fonts/Poppins-Black.ttf) format("truetype");
-  font-display: swap;
 }
 
 a {
@@ -226,7 +222,9 @@ a {
   /* display: inline-block; */
   /* font-size: 150px; */
   font-size: calc(10vw - 10px);
-  font-family: "RubberDuck", sans-serif;
+  font-family: "RubberDuck", "serif";
+  font-family: monospace;
+
   color: #ffffff00;
   background: radial-gradient(
       circle at 85% 20%,

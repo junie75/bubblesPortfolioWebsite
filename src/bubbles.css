@@ -1,25 +1,21 @@
 @font-face {
   font-family: "Cloudy";
   src: url(src/assets/fonts/Cloudy.ttf) format("truetype");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Bubbles";
   src: url(src/assets/fonts/RubikBubbles-Regular.ttf) format("truetype");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins-Bold";
   src: url(src/assets/fonts/Poppins-Bold.ttf) format("truetype");
-  font-display: swap;
 }
 
 @font-face {
   font-family: "Poppins-Medium";
   src: url(src/assets/fonts/Poppins-Medium.ttf) format("truetype");
-  font-display: swap;
 }
 
 body {
