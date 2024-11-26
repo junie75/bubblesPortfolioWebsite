@@ -222,9 +222,7 @@ a {
   /* display: inline-block; */
   /* font-size: 150px; */
   font-size: calc(10vw - 10px);
-  font-family: "RubberDuck", "serif";
-  font-family: monospace;
-
+  font-family: "RubberDuck", monospace, sans-serif;
   color: #ffffff00;
   background: radial-gradient(
       circle at 85% 20%,
