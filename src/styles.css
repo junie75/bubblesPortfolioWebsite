@@ -44,7 +44,6 @@ body {
 @font-face {
   font-family: "RubberDuck";
   src: url(/fonts/rubber-duck.Regular.ttf) format("truetype");
-  font-display: swap;
 }
 
 @font-face {
