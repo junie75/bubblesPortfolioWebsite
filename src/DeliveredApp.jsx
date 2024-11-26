@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Navbar from "./Navbar";
 import "./ProjectPages.css";
@@ -7,6 +7,24 @@ import dlvrdImages from "./dlvrdCarousel.js";
 import ImageSlider from "./ImageSlider";
 
 export default function DeliveredApp() {
+  const [currentImage, setCurrentImage] = useState(dlvrdImages[0]);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+    console.log("modalOpen: ", modalOpen);
+  };
+
+  const sliderModal = () => {
+    return (
+      <div className="sliderModal">
+        <div className="modalImage" onClick={toggleModal}>
+          {console.log("currentImage: ", currentImage)}
+          <img src={currentImage} alt="modalImage" />
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="projectPageContainer">
       <Navbar />
@@ -24,7 +42,12 @@ export default function DeliveredApp() {
       <div className="projectPage">
         <div className="projectTitle">Delivered App</div>
         {/* <div className="projectVid">Video</div> */}
-        <ImageSlider images={dlvrdImages} />
+        <ImageSlider
+          images={dlvrdImages}
+          setCurrentImage={setCurrentImage}
+          toggleModal={toggleModal}
+        />
+        {modalOpen && sliderModal(currentImage)}
         <div className="projectContent">
           <section>
             <h1>Overview</h1>

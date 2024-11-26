@@ -49,7 +49,7 @@ const ImageSlider = ({
                   <motion.div
                     className="carouselItemVert"
                     key={index}
-                    // onClick={handleImageClick(index)}
+                    onTap={() => handleImageClick(image)}
                   >
                     <img src={image} alt="imageofProject" />
                   </motion.div>

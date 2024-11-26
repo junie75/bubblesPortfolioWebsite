@@ -70,7 +70,7 @@ export default function Contact() {
                 <img className="smallIcon" src={linkedin} alt="linkedin icon" />
               </a>
             </div>
-            <a href="../public/resumeFall24v2.pdf" download>
+            <a href="/resumeFall24v2.pdf" download>
               <div className="button">Download resume</div>
             </a>
           </div>

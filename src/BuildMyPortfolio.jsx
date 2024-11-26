@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import "./ProjectPages.css";
 import { Link } from "react-router-dom";
@@ -6,12 +6,36 @@ import bmpImages from "./bmpCarousel";
 import ImageSlider from "./ImageSlider";
 
 export default function BuildMyPortfolio() {
+  const [currentImage, setCurrentImage] = useState(bmpImages[0]);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+    console.log("modalOpen: ", modalOpen);
+  };
+
+  const sliderModal = () => {
+    return (
+      <div className="sliderModal">
+        <div className="modalImage" onClick={toggleModal}>
+          {console.log("currentImage: ", currentImage)}
+          <img src={currentImage} alt="modalImage" />
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="projectPageContainer">
       <Navbar />
       <div className="projectPage">
         <div className="projectTitle">BuildMyPortfolio App</div>
-        <ImageSlider images={bmpImages} orientation="horizontal" />
+        <ImageSlider
+          images={bmpImages}
+          orientation="horizontal"
+          setCurrentImage={setCurrentImage}
+          toggleModal={toggleModal}
+        />
+        {modalOpen && sliderModal(currentImage)}
         <div className="projectContent">
           <section>
             <h1>Overview</h1>

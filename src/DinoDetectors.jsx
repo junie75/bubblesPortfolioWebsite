@@ -7,12 +7,35 @@ import ImageSlider from "./ImageSlider";
 import ddImages from "./ddCarousel";
 
 const DinoDetectors = () => {
+  const [currentImage, setCurrentImage] = useState(ddImages[0]);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+    console.log("modalOpen: ", modalOpen);
+  };
+
+  const sliderModal = () => {
+    return (
+      <div className="sliderModal">
+        <div className="modalImage" onClick={toggleModal}>
+          {console.log("currentImage: ", currentImage)}
+          <img src={currentImage} alt="modalImage" />
+        </div>
+      </div>
+    );
+  };
   return (
     <div className="projectPageContainer">
       <Navbar />
       <div className="projectPage">
         <div className="projectTitle">Dino Detectors</div>
-        <ImageSlider images={ddImages} />
+        <ImageSlider
+          images={ddImages}
+          setCurrentImage={setCurrentImage}
+          toggleModal={toggleModal}
+        />
+        {modalOpen && sliderModal(currentImage)}
         <div className="projectContent">
           <section>
             <h1>Overview</h1>
